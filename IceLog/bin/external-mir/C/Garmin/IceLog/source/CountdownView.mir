@@ -1,0 +1,212 @@
+[ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Timer,3,13,18]; ]
+using Toybox.Timer;
+[ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 5; @symbol_classdef = [CountdownView,5,6,19]; @symbol_extends<0> = [WatchUi,5,28,35]; @symbol_extends<1> = [View,5,36,40]; ]
+class CountdownView extends WatchUi.View {
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 7; @position = 8; @symbol_vardef = [_timer,7,8,14]; ]
+    var _timer;
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 8; @position = 8; @symbol_vardef = [_count,8,8,14]; ]
+    var _count = 3;
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    function initialize() as Void {
+C__Garmin_IceLog_source_CountdownView_mc_10_26_14_4_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 11 8 ]
+        symbol [ View %tmp.2 11 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 11 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 13 8 ]
+        symbol [ Timer %tmp.6 13 21 26 ];
+        %tmp.6 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.7 13 27 32 ];
+        %tmp.7 = getv function ? %tmp.6 :Timer;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _timer ? 13 8 14 ];
+        putv self :_timer %tmp.4;
+C__Garmin_IceLog_source_CountdownView_mc_10_26_14_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 16; @symbol_functiondef = [onShow,16,13,19]; ]
+    function onShow() {
+C__Garmin_IceLog_source_CountdownView_mc_16_22_18_4_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 17 8 ]
+        symbol [ _timer %tmp.2 17 8 14 ];
+        %tmp.2 = getv ? :_timer;
+        symbol [ start %tmp.3 17 15 20 ];
+        %tmp.3 = getv function %tmp.2 :start;
+        %tmp.4 = self;
+        symbol [ method %tmp.5 17 21 27 ];
+        %tmp.5 = getv function %tmp.4 :method;
+        %tmp.7 = const :tick;
+        symbol [ tick %tmp.7 17 29 33 const ];
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
+        %tmp.9 = 1000;
+        %tmp.10 = true;
+        invoke %tmp.2 %tmp.3(%tmp.8, %tmp.9, %tmp.10);
+C__Garmin_IceLog_source_CountdownView_mc_16_22_18_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 20; @symbol_functiondef = [onHide,20,13,19]; ]
+    function onHide() {
+C__Garmin_IceLog_source_CountdownView_mc_20_22_22_4_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 21 8 ]
+        symbol [ _timer %tmp.2 21 8 14 ];
+        %tmp.2 = getv ? :_timer;
+        symbol [ stop %tmp.3 21 15 19 ];
+        %tmp.3 = getv function %tmp.2 :stop;
+        invoke %tmp.2 %tmp.3();
+C__Garmin_IceLog_source_CountdownView_mc_20_22_22_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 24; @symbol_functiondef = [tick,24,13,17]; ]
+    function tick() {
+C__Garmin_IceLog_source_CountdownView_mc_24_20_30_4_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 26 8 ]
+        symbol [ _count %tmp.1 26 8 14 ];
+        %tmp.1 = getv self :_count;
+        %tmp.2 = 1;
+        %tmp.3 = sub %tmp.1 %tmp.2;
+        symbol [ _count ? 26 8 14 ];
+        putv self :_count dup %tmp.3;
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 28 8 ]
+        symbol [ WatchUi %tmp.4 28 8 15 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.5 28 16 29 ];
+        %tmp.5 = getv function %tmp.4 :requestUpdate;
+        invoke %tmp.4 %tmp.5();
+C__Garmin_IceLog_source_CountdownView_mc_24_20_30_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 32; @symbol_functiondef = [onUpdate,32,13,21]; @symbol_param<0> = [dc,32,22,24]; ]
+    function onUpdate(dc) {
+C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 34 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 34 8 10 ];
+        symbol [ setColor %tmp.2 34 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 34 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 34 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 34 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 34 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 35 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 35 8 10 ];
+        symbol [ clear %tmp.8 35 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 37 8 ]
+        [ "C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_start" "C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 37 12 13 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 37 16 18 ];
+        symbol [ getWidth %tmp.10 37 19 27 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %w.1 %tmp.11;
+        symbol [ w %w.1 37 12 13 ];
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 38 8 ]
+        [ "C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_start" "C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_stop" ]
+        %h.2 = local;
+        symbol [ h %h.2 38 12 13 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 38 16 18 ];
+        symbol [ getHeight %tmp.13 38 19 28 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %h.2 %tmp.14;
+        symbol [ h %h.2 38 12 13 ];
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 40 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 40 8 10 ];
+        symbol [ drawText %tmp.16 40 11 19 ];
+        %tmp.16 = getv function %tmp.15 :drawText;
+        %tmp.17 = lgetv %w.1;
+        symbol [ w %tmp.17 41 12 13 ];
+        %tmp.18 = 2;
+        %tmp.19 = div %tmp.17 %tmp.18;
+        %tmp.20 = 35;
+        symbol [ Graphics %tmp.21 43 12 20 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.22 43 21 32 ];
+        %tmp.22 = getv %tmp.21 :FONT_MEDIUM;
+        %tmp.23 = "Bereit?";
+        symbol [ Graphics %tmp.24 45 12 20 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.25 45 21 40 ];
+        %tmp.25 = getv %tmp.24 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.15 %tmp.16(%tmp.19, %tmp.20, %tmp.22, %tmp.23, %tmp.25);
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 48 8 ]
+        [ "C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_start" "C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_stop" ]
+        %txt.3 = local;
+        symbol [ txt %txt.3 48 12 15 ];
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 50 8 ]
+C__Garmin_IceLog_source_CountdownView_mc_50_8_54_8_if_stmt:
+        symbol [ _count %tmp.27 50 12 18 ];
+        %tmp.27 = getv ? :_count;
+        %tmp.28 = 0;
+        %tmp.29 = gt %tmp.27 %tmp.28;
+        bf %tmp.29 @C__Garmin_IceLog_source_CountdownView_mc_50_8_54_8_if_else_false;
+C__Garmin_IceLog_source_CountdownView_mc_50_8_54_8_if_true:
+C__Garmin_IceLog_source_CountdownView_mc_50_24_52_8_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 51 12 ]
+        symbol [ _count %tmp.31 51 18 24 ];
+        %tmp.31 = getv ? :_count;
+        symbol [ toString %tmp.32 51 25 33 ];
+        %tmp.32 = getv function %tmp.31 :toString;
+        %tmp.33 = invoke %tmp.31 %tmp.32();
+        lputv %txt.3 %tmp.33;
+        symbol [ txt %txt.3 51 12 15 ];
+C__Garmin_IceLog_source_CountdownView_mc_50_24_52_8_stop:
+        goto @C__Garmin_IceLog_source_CountdownView_mc_50_8_54_8_if_end;
+C__Garmin_IceLog_source_CountdownView_mc_50_8_54_8_if_else_false:
+C__Garmin_IceLog_source_CountdownView_mc_52_15_54_8_start:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 53 12 ]
+        %tmp.34 = "LOS!";
+        lputv %txt.3 %tmp.34;
+        symbol [ txt %txt.3 53 12 15 ];
+C__Garmin_IceLog_source_CountdownView_mc_52_15_54_8_stop:
+C__Garmin_IceLog_source_CountdownView_mc_50_8_54_8_if_end:
+[ "C:\Garmin\IceLog\source\CountdownView.mc" 56 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 56 8 10 ];
+        symbol [ drawText %tmp.36 56 11 19 ];
+        %tmp.36 = getv function %tmp.35 :drawText;
+        %tmp.37 = lgetv %w.1;
+        symbol [ w %tmp.37 57 12 13 ];
+        %tmp.38 = 2;
+        %tmp.39 = div %tmp.37 %tmp.38;
+        %tmp.40 = lgetv %h.2;
+        symbol [ h %tmp.40 58 12 13 ];
+        %tmp.41 = 2;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        symbol [ Graphics %tmp.43 59 12 20 ];
+        %tmp.43 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.44 59 21 31 ];
+        %tmp.44 = getv %tmp.43 :FONT_LARGE;
+        %tmp.45 = lgetv %txt.3;
+        symbol [ txt %tmp.45 60 12 15 ];
+        symbol [ Graphics %tmp.46 61 12 20 ];
+        %tmp.46 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.47 61 21 40 ];
+        %tmp.47 = getv %tmp.46 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.35 %tmp.36(%tmp.39, %tmp.42, %tmp.44, %tmp.45, %tmp.47);
+C__Garmin_IceLog_source_CountdownView_mc_32_26_63_4_stop:
+    }
+}
+[ @file = "C:\Garmin\IceLog\source\CountdownView.mc"; @line = 1; ]
+<init> {
+}

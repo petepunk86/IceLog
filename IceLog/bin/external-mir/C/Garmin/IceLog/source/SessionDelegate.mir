@@ -1,0 +1,70 @@
+[ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 4; @symbol_classdef = [SessionDelegate,4,6,21]; @symbol_extends<0> = [WatchUi,4,30,37]; @symbol_extends<1> = [BehaviorDelegate,4,38,54]; ]
+class SessionDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+C__Garmin_IceLog_source_SessionDelegate_mc_6_26_8_4_start:
+[ "C:\Garmin\IceLog\source\SessionDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Garmin_IceLog_source_SessionDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 10; @symbol_functiondef = [onSelect,10,13,21]; ]
+    function onSelect() {
+C__Garmin_IceLog_source_SessionDelegate_mc_10_24_17_4_start:
+[ "C:\Garmin\IceLog\source\SessionDelegate.mc" 11 8 ]
+        symbol [ WatchUi %tmp.1 11 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.2 11 16 24 ];
+        %tmp.2 = getv function %tmp.1 :pushView;
+        symbol [ CountdownView %tmp.6 12 16 29 ];
+        %tmp.6 = getv ? :CountdownView;
+        %tmp.3 = newc %tmp.6 ();
+        symbol [ BehaviorDelegate %tmp.10 13 16 32 ];
+        %tmp.10 = getv ? :BehaviorDelegate;
+        %tmp.7 = newc %tmp.10 ();
+        symbol [ WatchUi %tmp.11 14 12 19 ];
+        %tmp.11 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.12 14 20 30 ];
+        %tmp.12 = getv %tmp.11 :SLIDE_LEFT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.7, %tmp.12);
+[ "C:\Garmin\IceLog\source\SessionDelegate.mc" 16 8 ]
+        %tmp.13 = true;
+        ret %tmp.13;
+C__Garmin_IceLog_source_SessionDelegate_mc_10_24_17_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 19; @symbol_functiondef = [onBack,19,13,19]; ]
+    function onBack() {
+C__Garmin_IceLog_source_SessionDelegate_mc_19_22_22_4_start:
+[ "C:\Garmin\IceLog\source\SessionDelegate.mc" 20 8 ]
+        symbol [ WatchUi %tmp.1 20 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 20 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 20 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.4 20 32 43 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "C:\Garmin\IceLog\source\SessionDelegate.mc" 21 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+C__Garmin_IceLog_source_SessionDelegate_mc_19_22_22_4_stop:
+    }
+}
+[ @file = "C:\Garmin\IceLog\source\SessionDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,301 @@
+[ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 5; @symbol_classdef = [MainView,5,6,14]; @symbol_extends<0> = [WatchUi,5,23,30]; @symbol_extends<1> = [View,5,31,35]; ]
+class MainView extends WatchUi.View {
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 7; @position = 8; @symbol_vardef = [_selected,7,8,17]; ]
+    var _selected = 0;
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+C__Garmin_IceLog_source_MainView_mc_9_26_11_4_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 10 8 ]
+        symbol [ View %tmp.2 10 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 10 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Garmin_IceLog_source_MainView_mc_9_26_11_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 13; @symbol_functiondef = [moveUp,13,13,19]; ]
+    function moveUp() {
+C__Garmin_IceLog_source_MainView_mc_13_22_18_4_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 14 8 ]
+C__Garmin_IceLog_source_MainView_mc_14_8_17_8_if_stmt:
+        symbol [ _selected %tmp.2 14 12 21 ];
+        %tmp.2 = getv ? :_selected;
+        %tmp.3 = 0;
+        %tmp.4 = gt %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Garmin_IceLog_source_MainView_mc_14_8_17_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_14_8_17_8_if_true:
+C__Garmin_IceLog_source_MainView_mc_14_27_17_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 15 12 ]
+        symbol [ _selected %tmp.5 15 12 21 ];
+        %tmp.5 = getv self :_selected;
+        %tmp.6 = 1;
+        %tmp.7 = sub %tmp.5 %tmp.6;
+        symbol [ _selected ? 15 12 21 ];
+        putv self :_selected dup %tmp.7;
+[ "C:\Garmin\IceLog\source\MainView.mc" 16 12 ]
+        symbol [ WatchUi %tmp.8 16 12 19 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.9 16 20 33 ];
+        %tmp.9 = getv function %tmp.8 :requestUpdate;
+        invoke %tmp.8 %tmp.9();
+C__Garmin_IceLog_source_MainView_mc_14_27_17_8_stop:
+        goto @C__Garmin_IceLog_source_MainView_mc_14_8_17_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_14_8_17_8_if_end:
+C__Garmin_IceLog_source_MainView_mc_13_22_18_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 20; @symbol_functiondef = [moveDown,20,13,21]; ]
+    function moveDown() {
+C__Garmin_IceLog_source_MainView_mc_20_24_25_4_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 21 8 ]
+C__Garmin_IceLog_source_MainView_mc_21_8_24_8_if_stmt:
+        symbol [ _selected %tmp.2 21 12 21 ];
+        %tmp.2 = getv ? :_selected;
+        %tmp.3 = 2;
+        %tmp.4 = lt %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Garmin_IceLog_source_MainView_mc_21_8_24_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_21_8_24_8_if_true:
+C__Garmin_IceLog_source_MainView_mc_21_27_24_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 22 12 ]
+        symbol [ _selected %tmp.5 22 12 21 ];
+        %tmp.5 = getv self :_selected;
+        %tmp.6 = 1;
+        %tmp.7 = add %tmp.5 %tmp.6;
+        symbol [ _selected ? 22 12 21 ];
+        putv self :_selected dup %tmp.7;
+[ "C:\Garmin\IceLog\source\MainView.mc" 23 12 ]
+        symbol [ WatchUi %tmp.8 23 12 19 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.9 23 20 33 ];
+        %tmp.9 = getv function %tmp.8 :requestUpdate;
+        invoke %tmp.8 %tmp.9();
+C__Garmin_IceLog_source_MainView_mc_21_27_24_8_stop:
+        goto @C__Garmin_IceLog_source_MainView_mc_21_8_24_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_21_8_24_8_if_end:
+C__Garmin_IceLog_source_MainView_mc_20_24_25_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 27; @symbol_functiondef = [select,27,13,19]; ]
+    function select() {
+C__Garmin_IceLog_source_MainView_mc_27_22_40_4_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 29 8 ]
+C__Garmin_IceLog_source_MainView_mc_29_8_39_8_if_stmt:
+        symbol [ _selected %tmp.2 29 12 21 ];
+        %tmp.2 = getv ? :_selected;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Garmin_IceLog_source_MainView_mc_29_8_39_8_if_false;
+C__Garmin_IceLog_source_MainView_mc_29_8_39_8_if_true:
+C__Garmin_IceLog_source_MainView_mc_29_28_35_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 30 12 ]
+        symbol [ WatchUi %tmp.5 30 12 19 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.6 30 20 28 ];
+        %tmp.6 = getv function %tmp.5 :pushView;
+        symbol [ SessionView %tmp.10 31 20 31 ];
+        %tmp.10 = getv ? :SessionView;
+        %tmp.7 = newc %tmp.10 ();
+        symbol [ SessionDelegate %tmp.14 32 20 35 ];
+        %tmp.14 = getv ? :SessionDelegate;
+        %tmp.11 = newc %tmp.14 ();
+        symbol [ WatchUi %tmp.15 33 16 23 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.16 33 24 34 ];
+        %tmp.16 = getv %tmp.15 :SLIDE_LEFT;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.11, %tmp.16);
+C__Garmin_IceLog_source_MainView_mc_29_28_35_8_stop:
+        goto @C__Garmin_IceLog_source_MainView_mc_29_8_39_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_29_8_39_8_if_false:
+[ "C:\Garmin\IceLog\source\MainView.mc" 35 15 ]
+C__Garmin_IceLog_source_MainView_mc_35_15_39_8_if_stmt:
+        symbol [ _selected %tmp.18 35 19 28 ];
+        %tmp.18 = getv ? :_selected;
+        %tmp.19 = 1;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Garmin_IceLog_source_MainView_mc_35_15_39_8_if_else_false;
+C__Garmin_IceLog_source_MainView_mc_35_15_39_8_if_true:
+C__Garmin_IceLog_source_MainView_mc_35_35_37_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 36 12 ]
+        symbol [ System %tmp.21 36 12 18 ];
+        %tmp.21 = getm $.Toybox.System;
+        symbol [ println %tmp.22 36 19 26 ];
+        %tmp.22 = getv function %tmp.21 :println;
+        %tmp.23 = "Verlauf";
+        invoke %tmp.21 %tmp.22(%tmp.23);
+C__Garmin_IceLog_source_MainView_mc_35_35_37_8_stop:
+        goto @C__Garmin_IceLog_source_MainView_mc_35_15_39_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_35_15_39_8_if_else_false:
+C__Garmin_IceLog_source_MainView_mc_37_15_39_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 38 12 ]
+        symbol [ System %tmp.24 38 12 18 ];
+        %tmp.24 = getm $.Toybox.System;
+        symbol [ println %tmp.25 38 19 26 ];
+        %tmp.25 = getv function %tmp.24 :println;
+        %tmp.26 = "Einstellungen";
+        invoke %tmp.24 %tmp.25(%tmp.26);
+C__Garmin_IceLog_source_MainView_mc_37_15_39_8_stop:
+C__Garmin_IceLog_source_MainView_mc_35_15_39_8_if_end:
+C__Garmin_IceLog_source_MainView_mc_29_8_39_8_if_end:
+C__Garmin_IceLog_source_MainView_mc_27_22_40_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 42; @symbol_functiondef = [onUpdate,42,13,21]; @symbol_param<0> = [dc,42,22,24]; ]
+    function onUpdate(dc) {
+C__Garmin_IceLog_source_MainView_mc_42_26_60_4_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 44 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 44 8 10 ];
+        symbol [ setColor %tmp.2 44 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 44 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 44 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 44 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 44 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Garmin\IceLog\source\MainView.mc" 45 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 45 8 10 ];
+        symbol [ clear %tmp.8 45 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Garmin\IceLog\source\MainView.mc" 47 8 ]
+        [ "C__Garmin_IceLog_source_MainView_mc_42_26_60_4_start" "C__Garmin_IceLog_source_MainView_mc_42_26_60_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 47 12 13 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 47 16 18 ];
+        symbol [ getWidth %tmp.10 47 19 27 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %w.1 %tmp.11;
+        symbol [ w %w.1 47 12 13 ];
+[ "C:\Garmin\IceLog\source\MainView.mc" 49 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 49 8 10 ];
+        symbol [ drawText %tmp.13 49 11 19 ];
+        %tmp.13 = getv function %tmp.12 :drawText;
+        %tmp.14 = lgetv %w.1;
+        symbol [ w %tmp.14 50 12 13 ];
+        %tmp.15 = 2;
+        %tmp.16 = div %tmp.14 %tmp.15;
+        %tmp.17 = 15;
+        symbol [ Graphics %tmp.18 52 12 20 ];
+        %tmp.18 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.19 52 21 31 ];
+        %tmp.19 = getv %tmp.18 :FONT_LARGE;
+        %tmp.20 = "ICELOG";
+        symbol [ Graphics %tmp.21 54 12 20 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.22 54 21 40 ];
+        %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.12 %tmp.13(%tmp.16, %tmp.17, %tmp.19, %tmp.20, %tmp.22);
+[ "C:\Garmin\IceLog\source\MainView.mc" 57 8 ]
+        %tmp.23 = self;
+        symbol [ drawItem %tmp.24 57 8 16 ];
+        %tmp.24 = getv function %tmp.23 :drawItem;
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 57 17 19 ];
+        %tmp.26 = 50;
+        %tmp.27 = "Neue Session";
+        symbol [ _selected %tmp.29 57 41 50 ];
+        %tmp.29 = getv ? :_selected;
+        %tmp.30 = 0;
+        %tmp.31 = eq %tmp.29 %tmp.30;
+        invoke %tmp.23 %tmp.24(%tmp.25, %tmp.26, %tmp.27, %tmp.31);
+[ "C:\Garmin\IceLog\source\MainView.mc" 58 8 ]
+        %tmp.32 = self;
+        symbol [ drawItem %tmp.33 58 8 16 ];
+        %tmp.33 = getv function %tmp.32 :drawItem;
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 58 17 19 ];
+        %tmp.35 = 80;
+        %tmp.36 = "Verlauf";
+        symbol [ _selected %tmp.38 58 36 45 ];
+        %tmp.38 = getv ? :_selected;
+        %tmp.39 = 1;
+        %tmp.40 = eq %tmp.38 %tmp.39;
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.35, %tmp.36, %tmp.40);
+[ "C:\Garmin\IceLog\source\MainView.mc" 59 8 ]
+        %tmp.41 = self;
+        symbol [ drawItem %tmp.42 59 8 16 ];
+        %tmp.42 = getv function %tmp.41 :drawItem;
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 59 17 19 ];
+        %tmp.44 = 110;
+        %tmp.45 = "Einstellungen";
+        symbol [ _selected %tmp.47 59 42 51 ];
+        %tmp.47 = getv ? :_selected;
+        %tmp.48 = 2;
+        %tmp.49 = eq %tmp.47 %tmp.48;
+        invoke %tmp.41 %tmp.42(%tmp.43, %tmp.44, %tmp.45, %tmp.49);
+C__Garmin_IceLog_source_MainView_mc_42_26_60_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 62; @symbol_functiondef = [drawItem,62,13,21]; @symbol_param<0> = [dc,62,22,24]; @symbol_param<1> = [y,62,26,27]; @symbol_param<2> = [text,62,29,33]; @symbol_param<3> = [selected,62,35,43]; ]
+    function drawItem(dc, y, text, selected) {
+C__Garmin_IceLog_source_MainView_mc_62_45_77_4_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 64 8 ]
+C__Garmin_IceLog_source_MainView_mc_64_8_68_8_if_stmt:
+        %tmp.1 = lgetv %selected;
+        symbol [ selected %tmp.1 64 12 20 ];
+        bf %tmp.1 @C__Garmin_IceLog_source_MainView_mc_64_8_68_8_if_else_false;
+C__Garmin_IceLog_source_MainView_mc_64_8_68_8_if_true:
+C__Garmin_IceLog_source_MainView_mc_64_22_66_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 65 12 ]
+        %tmp.2 = "> ";
+        %tmp.3 = lgetv %text;
+        symbol [ text %tmp.3 65 26 30 ];
+        %tmp.4 = add %tmp.2 %tmp.3;
+        lputv %text %tmp.4;
+        symbol [ text %text 65 12 16 ];
+C__Garmin_IceLog_source_MainView_mc_64_22_66_8_stop:
+        goto @C__Garmin_IceLog_source_MainView_mc_64_8_68_8_if_end;
+C__Garmin_IceLog_source_MainView_mc_64_8_68_8_if_else_false:
+C__Garmin_IceLog_source_MainView_mc_66_15_68_8_start:
+[ "C:\Garmin\IceLog\source\MainView.mc" 67 12 ]
+        %tmp.5 = "  ";
+        %tmp.6 = lgetv %text;
+        symbol [ text %tmp.6 67 26 30 ];
+        %tmp.7 = add %tmp.5 %tmp.6;
+        lputv %text %tmp.7;
+        symbol [ text %text 67 12 16 ];
+C__Garmin_IceLog_source_MainView_mc_66_15_68_8_stop:
+C__Garmin_IceLog_source_MainView_mc_64_8_68_8_if_end:
+[ "C:\Garmin\IceLog\source\MainView.mc" 70 8 ]
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 70 8 10 ];
+        symbol [ drawText %tmp.9 70 11 19 ];
+        %tmp.9 = getv function %tmp.8 :drawText;
+        %tmp.10 = 10;
+        %tmp.11 = lgetv %y;
+        symbol [ y %tmp.11 72 12 13 ];
+        symbol [ Graphics %tmp.12 73 12 20 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.13 73 21 31 ];
+        %tmp.13 = getv %tmp.12 :FONT_SMALL;
+        %tmp.14 = lgetv %text;
+        symbol [ text %tmp.14 74 12 16 ];
+        symbol [ Graphics %tmp.15 75 12 20 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.16 75 21 38 ];
+        %tmp.16 = getv %tmp.15 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.11, %tmp.13, %tmp.14, %tmp.16);
+C__Garmin_IceLog_source_MainView_mc_62_45_77_4_stop:
+    }
+}
+[ @file = "C:\Garmin\IceLog\source\MainView.mc"; @line = 1; ]
+<init> {
+}

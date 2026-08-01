@@ -1,0 +1,83 @@
+[ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 3; @symbol_classdef = [MainDelegate,3,6,18]; @symbol_extends<0> = [WatchUi,3,27,34]; @symbol_extends<1> = [BehaviorDelegate,3,35,51]; ]
+class MainDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 5; @position = 8; @symbol_vardef = [_view,5,8,13]; ]
+    var _view;
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; @symbol_param<0> = [view,7,24,28]; ]
+    function initialize(view) as Void {
+C__Garmin_IceLog_source_MainDelegate_mc_7_30_10_4_start:
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 8 8 ]
+        symbol [ BehaviorDelegate %tmp.2 8 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 8 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 9 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 9 16 20 ];
+        symbol [ _view ? 9 8 13 ];
+        putv self :_view %tmp.4;
+C__Garmin_IceLog_source_MainDelegate_mc_7_30_10_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 12; @symbol_functiondef = [onPreviousPage,12,13,27]; ]
+    function onPreviousPage() {
+C__Garmin_IceLog_source_MainDelegate_mc_12_30_15_4_start:
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 13 8 ]
+        symbol [ _view %tmp.2 13 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ moveUp %tmp.3 13 14 20 ];
+        %tmp.3 = getv function %tmp.2 :moveUp;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 14 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+C__Garmin_IceLog_source_MainDelegate_mc_12_30_15_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 17; @symbol_functiondef = [onNextPage,17,13,23]; ]
+    function onNextPage() {
+C__Garmin_IceLog_source_MainDelegate_mc_17_26_20_4_start:
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 18 8 ]
+        symbol [ _view %tmp.2 18 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ moveDown %tmp.3 18 14 22 ];
+        %tmp.3 = getv function %tmp.2 :moveDown;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 19 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+C__Garmin_IceLog_source_MainDelegate_mc_17_26_20_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 22; @symbol_functiondef = [onSelect,22,13,21]; ]
+    function onSelect() {
+C__Garmin_IceLog_source_MainDelegate_mc_22_24_25_4_start:
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 23 8 ]
+        symbol [ _view %tmp.2 23 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ select %tmp.3 23 14 20 ];
+        %tmp.3 = getv function %tmp.2 :select;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 24 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+C__Garmin_IceLog_source_MainDelegate_mc_22_24_25_4_stop:
+    }
+    [ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 27; @symbol_functiondef = [onBack,27,13,19]; ]
+    function onBack() {
+C__Garmin_IceLog_source_MainDelegate_mc_27_22_29_4_start:
+[ "C:\Garmin\IceLog\source\MainDelegate.mc" 28 8 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+C__Garmin_IceLog_source_MainDelegate_mc_27_22_29_4_stop:
+    }
+}
+[ @file = "C:\Garmin\IceLog\source\MainDelegate.mc"; @line = 1; ]
+<init> {
+}

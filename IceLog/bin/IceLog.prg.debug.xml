@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Garmin\IceLog\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="1" lineNum="4" parent="globals/IceLogApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="2" lineNum="4" parent="globals/SessionDelegate" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="3" lineNum="3" parent="globals/MainDelegate" pc="268435498" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="4" lineNum="5" parent="globals/MainView" pc="268435517" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\bin\\gen\\006-B4394-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435536" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="6" lineNum="4" parent="globals/SessionView" pc="268435560" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="7" lineNum="5" parent="globals/CountdownView" pc="268435579" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="8" lineNum="10" parent="globals/IceLogApp" pc="268435598" symbol="onStart"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="9" lineNum="16" parent="globals/IceLogApp" pc="268435601" symbol="getInitialView"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="9" lineNum="18" parent="globals/IceLogApp" pc="268435605" symbol="getInitialView"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="9" lineNum="20" parent="globals/IceLogApp" pc="268435629" symbol="getInitialView"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="10" lineNum="6" parent="globals/IceLogApp" pc="268435678" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="10" lineNum="7" parent="globals/IceLogApp" pc="268435680" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\IceLogApp.mc" id="11" lineNum="13" parent="globals/IceLogApp" pc="268435699" symbol="onStop"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="12" lineNum="19" parent="globals/SessionDelegate" pc="268435702" symbol="onBack"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="12" lineNum="20" parent="globals/SessionDelegate" pc="268435704" symbol="onBack"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="12" lineNum="21" parent="globals/SessionDelegate" pc="268435725" symbol="onBack"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="13" lineNum="6" parent="globals/SessionDelegate" pc="268435728" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="13" lineNum="7" parent="globals/SessionDelegate" pc="268435730" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="14" lineNum="10" parent="globals/SessionDelegate" pc="268435749" symbol="onSelect"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="14" lineNum="11" parent="globals/SessionDelegate" pc="268435751" symbol="onSelect"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionDelegate.mc" id="14" lineNum="16" parent="globals/SessionDelegate" pc="268435816" symbol="onSelect"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="15" lineNum="27" parent="globals/MainDelegate" pc="268435819" symbol="onBack"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="15" lineNum="28" parent="globals/MainDelegate" pc="268435821" symbol="onBack"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="16" lineNum="12" parent="globals/MainDelegate" pc="268435824" symbol="onPreviousPage"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="16" lineNum="13" parent="globals/MainDelegate" pc="268435826" symbol="onPreviousPage"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="16" lineNum="14" parent="globals/MainDelegate" pc="268435844" symbol="onPreviousPage"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="17" lineNum="7" parent="globals/MainDelegate" pc="268435847" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="17" lineNum="8" parent="globals/MainDelegate" pc="268435849" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="17" lineNum="9" parent="globals/MainDelegate" pc="268435867" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="18" lineNum="17" parent="globals/MainDelegate" pc="268435878" symbol="onNextPage"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="18" lineNum="18" parent="globals/MainDelegate" pc="268435880" symbol="onNextPage"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="18" lineNum="19" parent="globals/MainDelegate" pc="268435898" symbol="onNextPage"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="19" lineNum="22" parent="globals/MainDelegate" pc="268435901" symbol="onSelect"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="19" lineNum="23" parent="globals/MainDelegate" pc="268435903" symbol="onSelect"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainDelegate.mc" id="19" lineNum="24" parent="globals/MainDelegate" pc="268435921" symbol="onSelect"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="20" lineNum="27" parent="globals/MainView" pc="268435924" symbol="select"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="20" lineNum="29" parent="globals/MainView" pc="268435926" symbol="select"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="20" lineNum="30" parent="globals/MainView" pc="268435943" symbol="select"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="20" lineNum="35" parent="globals/MainView" pc="268436011" symbol="select"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="20" lineNum="36" parent="globals/MainView" pc="268436028" symbol="select"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="20" lineNum="38" parent="globals/MainView" pc="268436052" symbol="select"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="21" lineNum="62" parent="globals/MainView" pc="268436074" symbol="drawItem"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="21" lineNum="64" parent="globals/MainView" pc="268436076" symbol="drawItem"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="21" lineNum="65" parent="globals/MainView" pc="268436081" symbol="drawItem"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="21" lineNum="67" parent="globals/MainView" pc="268436094" symbol="drawItem"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="21" lineNum="70" parent="globals/MainView" pc="268436104" symbol="drawItem"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="22" lineNum="9" parent="globals/MainView" pc="268436136" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="22" lineNum="10" parent="globals/MainView" pc="268436138" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="23" lineNum="20" parent="globals/MainView" pc="268436157" symbol="moveDown"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="23" lineNum="21" parent="globals/MainView" pc="268436159" symbol="moveDown"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="23" lineNum="22" parent="globals/MainView" pc="268436176" symbol="moveDown"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="23" lineNum="23" parent="globals/MainView" pc="268436195" symbol="moveDown"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="42" parent="globals/MainView" pc="268436215" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="44" parent="globals/MainView" pc="268436219" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="45" parent="globals/MainView" pc="268436241" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="47" parent="globals/MainView" pc="268436253" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="49" parent="globals/MainView" pc="268436266" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="57" parent="globals/MainView" pc="268436306" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="58" parent="globals/MainView" pc="268436344" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="24" lineNum="59" parent="globals/MainView" pc="268436382" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="25" lineNum="13" parent="globals/MainView" pc="268436421" symbol="moveUp"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="25" lineNum="14" parent="globals/MainView" pc="268436423" symbol="moveUp"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="25" lineNum="15" parent="globals/MainView" pc="268436440" symbol="moveUp"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\MainView.mc" id="25" lineNum="16" parent="globals/MainView" pc="268436459" symbol="moveUp"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="26" lineNum="6" parent="globals/SessionView" pc="268436479" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="26" lineNum="7" parent="globals/SessionView" pc="268436481" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="10" parent="globals/SessionView" pc="268436500" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="12" parent="globals/SessionView" pc="268436504" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="13" parent="globals/SessionView" pc="268436526" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="15" parent="globals/SessionView" pc="268436538" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="17" parent="globals/SessionView" pc="268436551" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="25" parent="globals/SessionView" pc="268436591" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\SessionView.mc" id="27" lineNum="33" parent="globals/SessionView" pc="268436631" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="28" lineNum="16" parent="globals/CountdownView" pc="268436672" symbol="onShow"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="28" lineNum="17" parent="globals/CountdownView" pc="268436674" symbol="onShow"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="29" lineNum="10" parent="globals/CountdownView" pc="268436716" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="29" lineNum="11" parent="globals/CountdownView" pc="268436718" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="29" lineNum="13" parent="globals/CountdownView" pc="268436736" symbol="initialize"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="30" lineNum="20" parent="globals/CountdownView" pc="268436771" symbol="onHide"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="30" lineNum="21" parent="globals/CountdownView" pc="268436773" symbol="onHide"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="31" lineNum="24" parent="globals/CountdownView" pc="268436792" symbol="tick"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="31" lineNum="26" parent="globals/CountdownView" pc="268436794" symbol="tick"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="31" lineNum="28" parent="globals/CountdownView" pc="268436813" symbol="tick"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="32" parent="globals/CountdownView" pc="268436830" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="34" parent="globals/CountdownView" pc="268436834" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="35" parent="globals/CountdownView" pc="268436856" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="37" parent="globals/CountdownView" pc="268436868" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="38" parent="globals/CountdownView" pc="268436881" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="40" parent="globals/CountdownView" pc="268436894" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="50" parent="globals/CountdownView" pc="268436934" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="51" parent="globals/CountdownView" pc="268436951" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="53" parent="globals/CountdownView" pc="268436973" symbol="onUpdate"/>
+        <entry filename="C:\\Garmin\\IceLog\\source\\CountdownView.mc" id="32" lineNum="56" parent="globals/CountdownView" pc="268436980" symbol="onUpdate"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="5" object="true" symbol="CountdownView"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" object="true" symbol="MainDelegate"/>
+        <entry id="15" method="true" symbol="moveUp"/>
+        <entry id="6" object="true" symbol="IceLogApp"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="16" method="true" symbol="select"/>
+        <entry field="true" id="21" symbol="AppName"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8" object="true" symbol="MainView"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="14" method="true" symbol="moveDown"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry field="true" id="18" symbol="_timer"/>
+        <entry id="19" method="true" symbol="tick"/>
+        <entry field="true" id="12" symbol="_selected"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="9" object="true" symbol="SessionDelegate"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="20" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="11" symbol="_view"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="10" object="true" symbol="SessionView"/>
+        <entry field="true" id="17" symbol="_count"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="13" method="true" symbol="drawItem"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435677" name="view" stackId="1" startPc="268435605"/>
+        <entry arg="true" endPc="268435877" name="view" stackId="1" startPc="268435847"/>
+        <entry arg="true" endPc="268436135" name="dc" stackId="1" startPc="268436074"/>
+        <entry arg="true" endPc="268436135" name="y" stackId="2" startPc="268436074"/>
+        <entry arg="true" endPc="268436135" name="text" stackId="3" startPc="268436074"/>
+        <entry arg="true" endPc="268436135" name="selected" stackId="4" startPc="268436074"/>
+        <entry arg="true" endPc="268436420" name="dc" stackId="1" startPc="268436215"/>
+        <entry endPc="268436419" name="w" stackId="2" startPc="268436219"/>
+        <entry arg="true" endPc="268436671" name="dc" stackId="1" startPc="268436500"/>
+        <entry endPc="268436670" name="w" stackId="2" startPc="268436504"/>
+        <entry arg="true" endPc="268437020" name="dc" stackId="1" startPc="268436830"/>
+        <entry endPc="268437019" name="w" stackId="2" startPc="268436834"/>
+        <entry endPc="268437019" name="h" stackId="3" startPc="268436834"/>
+        <entry endPc="268437019" name="txt" stackId="4" startPc="268436834"/>
+    </localVars>
+    <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B4394-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="55" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/IceLogApp" offset="150" parentId="globals" symbolId="IceLogApp" type="class"/>
+        <dataEntry label="globals/SessionDelegate" offset="221" parentId="globals" symbolId="SessionDelegate" type="class"/>
+        <dataEntry label="globals/MainDelegate" offset="284" parentId="globals" symbolId="MainDelegate" type="class"/>
+        <dataEntry label="globals/MainView" offset="371" parentId="globals" symbolId="MainView" type="class"/>
+        <dataEntry label="globals/Rez" offset="466" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/SessionView" offset="513" parentId="globals" symbolId="SessionView" type="class"/>
+        <dataEntry label="globals/CountdownView" offset="568" parentId="globals" symbolId="CountdownView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="663" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="702" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="IceLogApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="SessionDelegate" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435516" name="&lt;init&gt;" parent="MainDelegate" startPc="268435498">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435535" name="&lt;init&gt;" parent="MainView" startPc="268435517">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435559" name="&lt;init&gt;" parent="Rez" startPc="268435536">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435578" name="&lt;init&gt;" parent="SessionView" startPc="268435560">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435597" name="&lt;init&gt;" parent="CountdownView" startPc="268435579">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435600" name="onStart" parent="IceLogApp" startPc="268435598">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435677" name="getInitialView" parent="IceLogApp" startPc="268435601">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435698" name="initialize" parent="IceLogApp" startPc="268435678">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435701" name="onStop" parent="IceLogApp" startPc="268435699">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435727" name="onBack" parent="SessionDelegate" startPc="268435702">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435748" name="initialize" parent="SessionDelegate" startPc="268435728">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435818" name="onSelect" parent="SessionDelegate" startPc="268435749">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435823" name="onBack" parent="MainDelegate" startPc="268435819">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435846" name="onPreviousPage" parent="MainDelegate" startPc="268435824">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435877" name="initialize" parent="MainDelegate" startPc="268435847">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435900" name="onNextPage" parent="MainDelegate" startPc="268435878">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435923" name="onSelect" parent="MainDelegate" startPc="268435901">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436073" name="select" parent="MainView" startPc="268435924">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436135" name="drawItem" parent="MainView" startPc="268436074">
+            <param id="dc"/>
+            <param id="y"/>
+            <param id="text"/>
+            <param id="selected"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436156" name="initialize" parent="MainView" startPc="268436136">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436214" name="moveDown" parent="MainView" startPc="268436157">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436420" name="onUpdate" parent="MainView" startPc="268436215">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436478" name="moveUp" parent="MainView" startPc="268436421">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436499" name="initialize" parent="SessionView" startPc="268436479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436671" name="onUpdate" parent="SessionView" startPc="268436500">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436715" name="onShow" parent="CountdownView" startPc="268436672">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436770" name="initialize" parent="CountdownView" startPc="268436716">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436791" name="onHide" parent="CountdownView" startPc="268436771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436829" name="tick" parent="CountdownView" startPc="268436792">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437020" name="onUpdate" parent="CountdownView" startPc="268436830">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

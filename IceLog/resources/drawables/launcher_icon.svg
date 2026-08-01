@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="40"
+     height="40">
+
+<rect
+    width="40"
+    height="40"
+    fill="black"/>
+
+<text
+    x="20"
+    y="25"
+    font-size="18"
+    text-anchor="middle"
+    fill="white">
+
+I
+
+</text>
+
+</svg>
